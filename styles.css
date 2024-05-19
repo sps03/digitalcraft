@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+#home {
+    height: 100vh;
+    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 2s ease;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease;
+}
+
+#home a {
+    animation: fadeInUp 2s ease;
+}
+
+#about, #services, #testimonials, #team, #gallery, #contact {
+    padding: 60px 0;
+}
+
+footer {
+    background: #343a40;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+#contactForm .form-control {
+    border-radius: 0;
+}
+
+#contactForm button {
+    border-radius: 0;
+}
